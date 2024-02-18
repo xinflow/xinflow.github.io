@@ -1,0 +1,224 @@
+html {
+    background-image: linear-gradient(132deg, #3F7AD6 0%, #407BD7 37%, #97BFFF 100%);
+
+    a {
+        color: inherit;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+body {
+    color: #fafafa;
+    font-size: 16px;
+    line-height: 1.5;
+    background: url(./images/background.png) no-repeat center 0;
+    background-size: 1000px;
+}
+
+.header {
+    height: 64px;
+    line-height: 64px;
+    box-shadow: #00000021 0px 0px 5px 2px;
+
+    .inner {
+        width: 960px;
+        margin: 0 auto;
+        display: flex;
+    }
+
+    .title {
+        font-size: 24px;
+        font-weight: bold;
+
+        img {
+            height: 20px;
+        }
+    }
+
+    .menu-list {
+        margin-left: 40px;
+        display: flex;
+        list-style: none;
+
+        li {
+            font-size: 18px;
+            margin: 0 32px;
+
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+
+}
+
+.body {
+    .inner {
+        width: 960px;
+        margin: 0 auto;
+        display: flex;
+    }
+
+    .section {
+        margin-top: 80px;
+
+        h2 {
+            font-size: 24px;
+            line-height: 2;
+            margin-bottom: 20px;
+        }
+
+        &.feature {
+            display: flex;
+            align-items: center;
+
+
+            img {
+                width: 420px;
+                margin-left: 40px;
+            }
+
+            .feature-list {
+                li {
+                    margin-bottom: 16px;
+                }
+            }
+        }
+
+        &.product {
+
+            .product-list {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 24px;
+            }
+
+            .product-item {
+                width: 256px;
+                padding: 8px;
+                border-radius: 24px;
+                color: #333;
+                background: #ffffffa0;
+
+                .item-info {
+                    display: flex;
+                }
+
+                .item-desc {
+                    padding: 8px;
+                    font-size: 14px;
+                    line-height: 1.7;
+                }
+
+                .product-image {
+                    img {
+                        width: 64px;
+                        height: 64px;
+                    }
+                }
+
+                .product-content {
+                    margin-left: 4px;
+
+                    h5 {
+                        line-height: 1.5;
+                        font-weight: bold;
+                        margin: 8px 0 4px 0;
+                    }
+
+                    p {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+
+        &.download {
+
+            table,
+            thead,
+            tbody,
+            tr {
+                width: 100%;
+            }
+
+            td {
+                height: 40px;
+                vertical-align: middle;
+                text-align: center;
+            }
+
+            thead td {
+                line-height: 30px;
+
+                .icon {
+                    margin-right: 8px;
+                    display: inline-block;
+
+                    img {
+                        width: 32px;
+                        margin-bottom: -8px;
+                    }
+                }
+
+            }
+        }
+
+        &.buy {
+            .buy-list {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 16px;
+
+                .buy-item {
+                    padding: 12px 16px;
+                    border: 1px solid #fff;
+                    border-radius: 4px;
+
+                    h5 {
+                        font-weight: bold;
+                        text-align: center;
+                        margin-bottom: 8px;
+                    }
+                }
+            }
+        }
+
+        &.qa {
+            .qa-list {
+                .qa-item {
+                    line-height: 1.7;
+                    margin-bottom: 16px;
+
+                    p {
+                        margin-top: 4px;
+                        padding-left: 12px;
+                    }
+                }
+            }
+        }
+
+    }
+
+
+
+
+}
+
+.footer {
+    margin-top: 80px;
+    height: 64px;
+    line-height: 64px;
+    box-shadow: #00000021 0px 4px 5px 4px;
+
+    .inner {
+        width: 960px;
+        margin: 0 auto;
+        font-size: 14px;
+    }
+
+}
