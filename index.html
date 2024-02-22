@@ -7,354 +7,359 @@
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./style.css">
     <!-- <link rel="stylesheet/less" type="text/css" href="./style.less" /> -->
+    <!-- <script>less = { env: 'development' };</script> -->
     <!-- <script src="https://cdn.jsdelivr.net/npm/less"></script> -->
+    <!-- <script>less.watch();</script> -->
+    <!-- <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.1/jquery.min.js"></script> -->
+    <script src="./index.js"></script>
 </head>
 
 <body>
-    <div class="header">
-        <div class="inner">
-            <h1 class="title">
-                <img src="./images/logo.svg" />
-                新流软件
-            </h1>
-
-            <ul class="menu-list">
-                <li>
-                    <a href="#product">产品</a>
-                </li>
-                <li>
-                    <a href="#download">下载</a>
-                </li>
-                <li>
-                    <a href="#buy">购买</a>
-                </li>
-                <li>
-                    <a href="#snapshot">截图</a>
-                </li>
-                <li>
-                    <a href="#qa">常见问题</a>
-                </li>
-            </ul>
+    <div class="wrapper">
+        <div class="header">
+            <div class="inner">
+                <h1 class="title">
+                    <img src="./images/logo.svg" />
+                    新流软件
+                </h1>
+                <div class="action" id="action">
+                </div>
+                <ul class="menu-list">
+                    <li>
+                        <a href="#product">产品</a>
+                    </li>
+                    <li>
+                        <a href="#download">下载</a>
+                    </li>
+                    <li>
+                        <a href="#buy">购买</a>
+                    </li>
+                    <li>
+                        <a href="#snapshot">截图</a>
+                    </li>
+                    <li>
+                        <a href="#qa">常见问题</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
-    <div class="body">
-        <div class="inner">
-            <ul class="sections">
-                <li id="feature" class="section feature">
-                    <div>
+        <div class="body">
+            <div class="inner">
+                <ul class="sections">
+                    <li id="feature" class="section feature">
+                        <div class="feature-list">
+                            <h2>
+                                将数据留在本地，让应用自由连通
+                            </h2>
+                            <ul>
+                                <li>
+                                    1. 数据本地存储，端到端传输加密，用户数据和隐私安全有保障
+                                </li>
+                                <li>
+                                    2. 支持 Windows、macOS、Linux、iOS、Android、Web 等多个平台
+                                </li>
+                                <li>
+                                    3. 支持所有平台间的数据流转和访问，支持动态域名绑定
+                                </li>
+                                <li>
+                                    4. 拒绝订阅制，一次购买所有平台终身永久使用
+                                </li>
+                            </ul>
+                        </div>
+                        <img src="./images/desk.svg" />
+                    </li>
+                    <li id="product" class="section product">
                         <h2 class="title">
-                            为什么选择新流软件
+                            产品
                         </h2>
-                        <ul class="feature-list">
+                        <ul class="product-list">
                             <li>
-                                1. 数据本地存储，应用离线运行，端到端传输加密，充分保证用户数据和隐私安全
+                                <div class="product-item">
+                                    <div class="item-info">
+                                        <div class="product-image">
+                                            <img src="./images/icon_note.png" />
+                                        </div>
+                                        <div class="product-content">
+                                            <h5>新流笔记</h5>
+                                            <p>可随身携带的笔记应用</p>
+                                        </div>
+                                    </div>
+                                    <ul class="item-desc">
+                                        <li>1. 严格忠实于用户输入</li>
+                                        <li>2. 基于标准markdown语法</li>
+                                        <li>3. 支持附件添加和管理</li>
+                                    </ul>
+                                </div>
                             </li>
                             <li>
-                                2. 支持Windows, macOS, Android, iOS, Linux, Web等几乎所有主流设备与平台
+                                <div class="product-item">
+                                    <div class="item-info">
+                                        <div class="product-image">
+                                            <img src="./images/icon_pass.png" />
+                                        </div>
+                                        <div class="product-content">
+                                            <h5>新流密码</h5>
+                                            <p>您可信任的密码保险箱</p>
+                                        </div>
+                                    </div>
+                                    <ul class="item-desc">
+                                        <li>1. 支持多账号管理</li>
+                                        <li>2. 支持附件添加和管理</li>
+                                        <li>3. 支持安全密码生成和密码历史</li>
+                                    </ul>
+                                </div>
                             </li>
                             <li>
-                                3. 支持不同设备和平台间基于局域网或者IPv6公网内应用间的跨平台跨设备访问
+                                <div class="product-item">
+                                    <div class="item-info">
+                                        <div class="product-image">
+                                            <img src="./images/icon_todo.png" />
+                                        </div>
+                                        <div class="product-content">
+                                            <h5>新流待办</h5>
+                                            <p>管理您的工作和日常生活</p>
+                                        </div>
+                                    </div>
+                                    <ul class="item-desc">
+                                        <li>1. 实时直观的进度展示</li>
+                                        <li>2. 支持无限层级的任务分解</li>
+                                        <li>3. 支持附件添加和管理</li>
+                                    </ul>
+                                </div>
                             </li>
                             <li>
-                                4. 拒绝订阅制，一次购买，所有设备和平台终身永久使用
+                                <div class="product-item">
+                                    <div class="item-info">
+                                        <div class="product-image">
+                                            <img src="./images/icon_budget.png" />
+                                        </div>
+                                        <div class="product-content">
+                                            <h5>新流预算</h5>
+                                            <p>合理规划您的消费支出</p>
+                                        </div>
+                                    </div>
+                                    <ul class="item-desc">
+                                        <li>1. 简单直观，易于使用</li>
+                                        <li>2. 支持附件添加和管理</li>
+                                    </ul>
+                                </div>
                             </li>
                         </ul>
-                    </div>
-                    <img src="./images/desk.svg" />
-                </li>
-                <li id="product" class="section product">
-                    <h2 class="title">
-                        产品
-                    </h2>
-                    <ul class="product-list">
-                        <li>
-                            <div class="product-item">
-                                <div class="item-info">
-                                    <div class="product-image">
-                                        <img src="./images/icon_note.png" />
-                                    </div>
-                                    <div class="product-content">
-                                        <h5>新流笔记</h5>
-                                        <p>可随身携带的笔记应用</p>
+                    </li>
+                    <li id="download" class="section download">
+                        <h2 class="title">
+                            下载
+                        </h2>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        <div class="icon">
+                                            <img width="20" src="./images/android.png" />
+                                        </div>
+                                        <span>Android</span>
+                                    </td>
+                                    <td>
+                                        <div class="icon">
+                                            <img src="./images/ios.png" />
+                                        </div>
+                                        <span>iOS</span>
+                                    </td>
+                                    <td>
+                                        <div class="icon">
+                                            <img src="./images/windows.png" />
+                                        </div>
+                                        <span>Windows</span>
+                                    </td>
+                                    <td>
+                                        <div class="icon">
+                                            <img src="./images/macos.png" />
+                                        </div>
+                                        <span>macOS</span>
+                                    </td>
+                                    <td>
+                                        <div class="icon">
+                                            <img src="./images/linux.png" />
+                                        </div>
+                                        <span>Linux</span>
+                                    </td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        新流笔记
+                                    </td>
+                                    <td>
+                                        <a>下载</a>
+                                    </td>
+                                    <td>
+                                        <a>下载</a>
+                                    </td>
+                                    <td>
+                                        <a>下载</a>
+                                    </td>
+                                    <td>
+                                        <a>下载</a>
+                                    </td>
+                                    <td>
+                                        <a>下载</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        新流密码
+                                    </td>
+                                    <td>
+                                        <a>下载</a>
+                                    </td>
+                                    <td>
+                                        <a>下载</a>
+                                    </td>
+                                    <td>
+                                        <a>下载</a>
+                                    </td>
+                                    <td>
+                                        <a>下载</a>
+                                    </td>
+                                    <td>
+                                        <a>下载</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        新流待办
+                                    </td>
+                                    <td>
+                                        <a>下载</a>
+                                    </td>
+                                    <td>
+                                        <a>下载</a>
+                                    </td>
+                                    <td>
+                                        <a>下载</a>
+                                    </td>
+                                    <td>
+                                        <a>下载</a>
+                                    </td>
+                                    <td>
+                                        <a>下载</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        新流预算
+                                    </td>
+                                    <td>
+                                        <a>下载</a>
+                                    </td>
+                                    <td>
+                                        <a>下载</a>
+                                    </td>
+                                    <td>
+                                        <a>下载</a>
+                                    </td>
+                                    <td>
+                                        <a>下载</a>
+                                    </td>
+                                    <td>
+                                        <a>下载</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                    <li id="buy" class="section buy">
+                        <h2 class="title">
+                            购买
+                        </h2>
+                        <ul class="buy-list">
+                            <li>
+                                <div class="buy-item">
+                                    <h5>新流笔记</h5>
+                                    <div>
+                                        <span>48元</span>
+                                        <del>68元</del>
+                                        <span>｜</span>
+                                        <a target="_blank" href="">前往购买</a>
                                     </div>
                                 </div>
-                                <ul class="item-desc">
-                                    <li>1. 严格忠实于用户输入</li>
-                                    <li>2. 基于标准markdown语法</li>
-                                    <li>3. 支持附件添加和管理</li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="product-item">
-                                <div class="item-info">
-                                    <div class="product-image">
-                                        <img src="./images/icon_pass.png" />
-                                    </div>
-                                    <div class="product-content">
-                                        <h5>新流密码</h5>
-                                        <p>您可信任的密码保险箱</p>
+                            </li>
+                            <li>
+                                <div class="buy-item">
+                                    <h5>新流密码</h5>
+                                    <div>
+                                        <span>38元</span>
+                                        <del>58元</del>
+                                        <span>｜</span>
+                                        <a target="_blank" href="">前往购买</a>
                                     </div>
                                 </div>
-                                <ul class="item-desc">
-                                    <li>1. 支持多账号管理</li>
-                                    <li>2. 支持附件添加和管理</li>
-                                    <li>3. 支持安全密码生成和密码历史</li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="product-item">
-                                <div class="item-info">
-                                    <div class="product-image">
-                                        <img src="./images/icon_todo.png" />
-                                    </div>
-                                    <div class="product-content">
-                                        <h5>新流待办</h5>
-                                        <p>管理您的工作和日常生活</p>
+                            </li>
+                            <li>
+                                <div class="buy-item">
+                                    <h5>新流待办</h5>
+                                    <div>
+                                        <span>38元</span>
+                                        <del>58元</del>
+                                        <span>｜</span>
+                                        <a target="_blank" href="">前往购买</a>
                                     </div>
                                 </div>
-                                <ul class="item-desc">
-                                    <li>1. 实时直观的进度展示</li>
-                                    <li>2. 支持无限层级的任务分解</li>
-                                    <li>3. 支持附件添加和管理</li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
-                    <ul class="product-list">
-                        <li>
-                            <div class="product-item">
-                                <div class="item-info">
-                                    <div class="product-image">
-                                        <img src="./images/icon_budget.png" />
-                                    </div>
-                                    <div class="product-content">
-                                        <h5>新流预算</h5>
-                                        <p>合理规划您的消费支出</p>
+                            </li>
+                            <li>
+                                <div class="buy-item">
+                                    <h5>新流预算</h5>
+                                    <div>
+                                        <span>38元</span>
+                                        <del>58元</del>
+                                        <span>｜</span>
+                                        <a target="_blank" href="">前往购买</a>
                                     </div>
                                 </div>
-                                <ul class="item-desc">
-                                    <li>1. 简单直观，易于使用</li>
-                                    <li>2. 支持附件添加和管理</li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
-                </li>
-                <li id="download" class="section download">
-                    <h2 class="title">
-                        下载
-                    </h2>
-                    <table>
-                        <thead>
-                            <tr>
-                                <td></td>
-                                <td>
-                                    <div class="icon">
-                                        <img width="20" src="./images/android.png" />
-                                    </div>
-                                    Android版本
-                                </td>
-                                <td>
-                                    <div class="icon">
-                                        <img src="./images/ios.png" />
-                                    </div>
-                                    iOS版本
-                                </td>
-                                <td>
-                                    <div class="icon">
-                                        <img src="./images/windows.png" />
-                                    </div>
-                                    Windows版
-                                </td>
-                                <td>
-                                    <div class="icon">
-                                        <img src="./images/macos.png" />
-                                    </div>
-                                    macOS版
-                                </td>
-                                <td>
-                                    <div class="icon">
-                                        <img src="./images/linux.png" />
-                                    </div>
-                                    Linux版本
-                                </td>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    新流笔记
-                                </td>
-                                <td>
-                                    <a>下载</a>
-                                </td>
-                                <td>
-                                    <a>下载</a>
-                                </td>
-                                <td>
-                                    <a>下载</a>
-                                </td>
-                                <td>
-                                    <a>下载</a>
-                                </td>
-                                <td>
-                                    <a>下载</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    新流密码
-                                </td>
-                                <td>
-                                    <a>下载</a>
-                                </td>
-                                <td>
-                                    <a>下载</a>
-                                </td>
-                                <td>
-                                    <a>下载</a>
-                                </td>
-                                <td>
-                                    <a>下载</a>
-                                </td>
-                                <td>
-                                    <a>下载</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    新流待办
-                                </td>
-                                <td>
-                                    <a>下载</a>
-                                </td>
-                                <td>
-                                    <a>下载</a>
-                                </td>
-                                <td>
-                                    <a>下载</a>
-                                </td>
-                                <td>
-                                    <a>下载</a>
-                                </td>
-                                <td>
-                                    <a>下载</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    新流预算
-                                </td>
-                                <td>
-                                    <a>下载</a>
-                                </td>
-                                <td>
-                                    <a>下载</a>
-                                </td>
-                                <td>
-                                    <a>下载</a>
-                                </td>
-                                <td>
-                                    <a>下载</a>
-                                </td>
-                                <td>
-                                    <a>下载</a>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </li>
-                <li id="buy" class="section buy">
-                    <h2 class="title">
-                        购买
-                    </h2>
-                    <ul class="buy-list">
-                        <li>
-                            <div class="buy-item">
-                                <h5>新流笔记</h5>
-                                <div>
-                                    <span>48元</span>
-                                    <del>68元</del>
-                                    <span>｜</span>
-                                    <a target="_blank" href="">前往购买</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="snapshot" class="section snapshot">
+                        <h2 class="title">截图</h2>
+                        <ul class="snapshot-list">
+                            <li></li>
+                        </ul>
+                    </li>
+                    <li id="qa" class="section qa">
+                        <h2 class="title">
+                            常见问题
+                        </h2>
+                        <ul class="qa-list">
+                            <li>
+                                <div class="qa-item">
+                                    <h5>1. Android和iOS的许可证能否通用</h5>
+                                    <p>
+                                        基于众所周知的原因， Android和iOS平台的许可证无法通用，但是支持不同平台和设备之间的数据迁移。
+                                    </p>
                                 </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="buy-item">
-                                <h5>新流密码</h5>
-                                <div>
-                                    <span>38元</span>
-                                    <del>58元</del>
-                                    <span>｜</span>
-                                    <a target="_blank" href="">前往购买</a>
+                                <div class="qa-item">
+                                    <h5>2. Android开启远程访问后，无法后台运行</h5>
+                                    <p>
+                                        那是因为Android对后台应用限制导致的, 以华为手机为例。<br />
+                                        1. 打开设置->电池->更多电池设置->开启休眠时始终保持网络连接。<br />
+                                        2. 打开设置->应用与服务->应用启动管理，选择相应的应用关闭自动管理，选择手动管理，允许后台活动。<br />
+                                    </p>
                                 </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="buy-item">
-                                <h5>新流待办</h5>
-                                <div>
-                                    <span>38元</span>
-                                    <del>58元</del>
-                                    <span>｜</span>
-                                    <a target="_blank" href="">前往购买</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="buy-item">
-                                <h5>新流预算</h5>
-                                <div>
-                                    <span>38元</span>
-                                    <del>58元</del>
-                                    <span>｜</span>
-                                    <a target="_blank" href="">前往购买</a>
-                                </div>
-                            </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="inner">
+                Copyright © xinflow.cn 版权所有
+            </div>
+        </div>
+    </div>
 
-                        </li>
-                    </ul>
-                </li>
-                <li id="snapshot" class="section snapshot">
-                    <h2 class="title">截图</h2>
-                    <ul class="snapshot-list">
-                        <li></li>
-                    </ul>
-                </li>
-                <li id="qa" class="section qa">
-                    <h2 class="title">
-                        常见问题
-                    </h2>
-                    <ul class="qa-list">
-                        <li>
-                            <div class="qa-item">
-                                <h5>1. Android和iOS的许可证能否通用</h5>
-                                <p>
-                                    基于众所周知的原因， Android和iOS平台的许可证无法通用，但是支持不同平台和设备之间的数据迁移。
-                                </p>
-                            </div>
-                            <div class="qa-item">
-                                <h5>2. Android开启远程访问后，无法后台运行</h5>
-                                <p>
-                                    那是因为Android对后台应用限制导致的, 以华为手机为例。<br />
-                                    1. 打开设置->电池->更多电池设置->开启休眠时始终保持网络连接。<br />
-                                    2. 打开设置->应用与服务->应用启动管理，选择相应的应用关闭自动管理，选择手动管理，允许后台活动。<br />
-                                </p>
-                            </div>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <div class="footer">
-        <div class="inner">
-            Copyright © xinflow.cn 版权所有
-        </div>
-    </div>
 </body>
 
 </html>

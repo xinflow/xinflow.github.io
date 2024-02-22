@@ -1,197 +1,293 @@
-html {
-  background-image: linear-gradient(132deg, #3F7AD6 0%, #407BD7 37%, #97BFFF 100%);
-}
-
 html a {
   color: inherit;
   text-decoration: none;
 }
-
 html a:hover {
   text-decoration: underline;
 }
-
 body {
   color: #fafafa;
   font-size: 16px;
   line-height: 1.5;
-  background: url(./images/background.png) no-repeat center 0;
-  background-size: 1000px;
+  background: #3F7AD6;
 }
-
 .header {
   height: 64px;
   line-height: 64px;
-  box-shadow: #00000021 0px 0px 5px 2px;
+  box-shadow: #00000026 0px 1px 3px 1px;
 }
-
 .header .inner {
-  width: 960px;
-  margin: 0 auto;
   display: flex;
+  margin: 0 auto;
+  position: relative;
 }
-
 .header .title {
   font-size: 24px;
   font-weight: bold;
 }
-
 .header .title img {
   height: 20px;
 }
-
+.header .action {
+  display: none;
+  position: absolute;
+  height: 64px;
+  width: 36px;
+  background: url(http://192.168.2.3:8080/images/menu_white_48dp.svg) center no-repeat;
+  background-size: contain;
+  right: 0;
+  cursor: pointer;
+}
+.header .action.close {
+  background: url(http://192.168.2.3:8080/images/close_white_48dp.svg) center no-repeat;
+  background-size: contain;
+}
 .header .menu-list {
-  margin-left: 40px;
+  margin-left: 32px;
   display: flex;
   list-style: none;
 }
-
 .header .menu-list li {
   font-size: 18px;
-  margin: 0 32px;
+  margin: 0 16px;
 }
-
 .header .menu-list li a {
   text-decoration: none;
+  padding: 0 8px;
 }
-
+@media (max-width: 768px) {
+  .header .inner {
+    position: relative;
+    justify-content: center;
+  }
+  .header .action {
+    display: block;
+  }
+  .header .action + .menu-list {
+    display: none;
+  }
+  .header .action.close + .menu-list {
+    display: block;
+  }
+  .header .menu-list {
+    position: absolute;
+    display: block;
+    margin-left: 0;
+    background-color: #3F7AD6;
+    top: 64px;
+    width: 100%;
+    text-align: center;
+    box-shadow: #00000026 0px 1px 3px 1px;
+  }
+  .header .menu-list a {
+    display: block;
+  }
+}
 .body .inner {
-  width: 960px;
   margin: 0 auto;
   display: flex;
 }
-
 .body .section {
-  margin-top: 80px;
+  margin-top: 60px;
 }
-
-.body .section h2 {
-  font-size: 24px;
-  line-height: 2;
-  margin-bottom: 20px;
+.body .section .title {
+  font-size: 28px;
+  margin-bottom: 40px;
 }
-
+@media (max-width: 768px) {
+  .body .section .title {
+    text-align: center;
+  }
+}
 .body .section.feature {
   display: flex;
   align-items: center;
 }
-
 .body .section.feature img {
-  width: 420px;
-  margin-left: 40px;
+  flex: 1;
+  width: 100%;
 }
-
+.body .section.feature .feature-list {
+  flex: 1;
+}
+.body .section.feature .feature-list h2 {
+  font-size: 28px;
+  margin-bottom: 40px;
+}
 .body .section.feature .feature-list li {
   margin-bottom: 16px;
 }
-
+@media (max-width: 768px) {
+  .body .section.feature .feature-list h2 {
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .body .section.feature img {
+    display: none;
+  }
+}
 .body .section.product .product-list {
   display: flex;
   justify-content: space-between;
   margin-bottom: 24px;
+  flex-wrap: wrap;
+  align-items: flex-start;
 }
-
+.body .section.product .product-list > li {
+  width: 32%;
+}
+@media (max-width: 600px) {
+  .body .section.product .product-list > li {
+    width: 49%;
+  }
+}
+@media (max-width: 400px) {
+  .body .section.product .product-list > li {
+    width: 98%;
+  }
+}
 .body .section.product .product-item {
-  width: 256px;
   padding: 8px;
   border-radius: 24px;
   color: #333;
   background: #ffffffa0;
+  margin-bottom: 16px;
 }
-
 .body .section.product .product-item .item-info {
   display: flex;
 }
-
 .body .section.product .product-item .item-desc {
   padding: 8px;
   font-size: 14px;
   line-height: 1.7;
 }
-
 .body .section.product .product-item .product-image img {
   width: 64px;
   height: 64px;
 }
-
 .body .section.product .product-item .product-content {
   margin-left: 4px;
 }
-
 .body .section.product .product-item .product-content h5 {
   line-height: 1.5;
   font-weight: bold;
   margin: 8px 0 4px 0;
 }
-
 .body .section.product .product-item .product-content p {
   font-size: 14px;
 }
-
 .body .section.download table,
 .body .section.download thead,
 .body .section.download tbody,
 .body .section.download tr {
   width: 100%;
 }
-
 .body .section.download td {
   height: 40px;
   vertical-align: middle;
   text-align: center;
 }
-
 .body .section.download thead td {
   line-height: 30px;
 }
-
 .body .section.download thead td .icon {
-  margin-right: 8px;
   display: inline-block;
+  vertical-align: bottom;
 }
-
 .body .section.download thead td .icon img {
   width: 32px;
-  margin-bottom: -8px;
 }
-
+@media (max-width: 400px) {
+  .body .section.download thead td .icon img {
+    display: none;
+  }
+}
 .body .section.buy .buy-list {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 16px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+  align-items: flex-start;
 }
-
+.body .section.buy .buy-list > li {
+  width: 24%;
+}
+@media (max-width: 800px) {
+  .body .section.buy .buy-list > li {
+    width: 32%;
+  }
+}
+@media (max-width: 600px) {
+  .body .section.buy .buy-list > li {
+    width: 48%;
+  }
+}
+@media (max-width: 400px) {
+  .body .section.buy .buy-list > li {
+    width: 98%;
+  }
+}
 .body .section.buy .buy-list .buy-item {
   padding: 12px 16px;
   border: 1px solid #fff;
   border-radius: 4px;
+  margin-bottom: 16px;
 }
-
 .body .section.buy .buy-list .buy-item h5 {
   font-weight: bold;
   text-align: center;
   margin-bottom: 8px;
 }
-
 .body .section.qa .qa-list .qa-item {
   line-height: 1.7;
   margin-bottom: 16px;
 }
-
 .body .section.qa .qa-list .qa-item p {
   margin-top: 4px;
   padding-left: 12px;
 }
-
 .footer {
   margin-top: 80px;
   height: 64px;
   line-height: 64px;
   box-shadow: #00000021 0px 4px 5px 4px;
 }
-
 .footer .inner {
-  width: 960px;
   margin: 0 auto;
   font-size: 14px;
+}
+@media (min-width: 769px) {
+  .header .inner {
+    box-sizing: border-box;
+    padding: 0 8px;
+    max-width: 960px;
+  }
+  .body .inner {
+    box-sizing: border-box;
+    padding: 0 8px;
+    max-width: 960px;
+  }
+  .footer .inner {
+    box-sizing: border-box;
+    padding: 0 8px;
+    max-width: 960px;
+  }
+}
+@media (max-width: 768px) {
+  .header .inner {
+    box-sizing: border-box;
+    padding: 0 8px;
+    width: 100%;
+  }
+  .body .inner {
+    box-sizing: border-box;
+    padding: 0 8px;
+    width: 100%;
+  }
+  .footer .inner {
+    box-sizing: border-box;
+    padding: 0 8px;
+    width: 100%;
+  }
 }
